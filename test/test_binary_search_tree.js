@@ -105,3 +105,17 @@ exports['test should be able to remove all starting with last'] = function(){
   assert.ok(!bst.contains(10));  
 };
 
+exports['test should be able to traverse graph'] = function(){
+  var bst = new BinarySearchTree();
+  bst.add(5);
+  bst.add(10);
+  bst.add(6);    
+  console.log(bst.right.value);
+    
+  // assert.eql(0, bst.size(), "Tree should have 0 items.");
+  // assert.ok(!bst.contains(5));
+  // assert.ok(!bst.contains(6));
+  // assert.ok(!bst.contains(10));  
+};
+
+
