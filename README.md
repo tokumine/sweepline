@@ -6,7 +6,9 @@ Despite intending it for the browser, it probably still needs some fettling to m
 
 Development
 ===========
-Developed in node.js with expresso as a test dependency.
+* node.js 0.45 
+* expresso 
+* underscore
 
 Tests
 ======
