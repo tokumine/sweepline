@@ -13,7 +13,7 @@ exports['test can build a polygon from an array of points'] = function(){
   assert.eql(polygon.vertices[0].x, geom[0][0]);
 };
 
-exports['test is polygon simple'] = function(){
+exports['test is polygon simple 1'] = function(){
   
   // note hack on last co-ordinate.
   var geom = [[100.0, 0.0], [101.0, 0.0], [101.0, 1.0], [100.0, 1.0], [100.000001, 0.000001]];
@@ -48,7 +48,7 @@ exports['test is polygon simple 4'] = function(){
 };
 
 
-exports['test is polygon complex'] = function(){
+exports['test is polygon complex 1'] = function(){
   var geom = [[2.0, 2.0], [2.0, 3.0], [3.0, 1.0], [4.0, 3.0], [4.0, 2.0], [2.00001, 2.00001]];
   var points  = _.map(geom, function(pnt){ return new Point(pnt[0],pnt[1]); });
   var polygon = new Polygon(points);
@@ -57,12 +57,13 @@ exports['test is polygon complex'] = function(){
 };
 
 
-exports['test is polygon complex 3'] = function(){
+exports['test is polygon complex 2'] = function(){
   var geom = [[2.0, 2.0], [3.0, 2.0], [3.0, 3.0], [2.0, 3.0], [4.0, 2.0], [2.0000001, 2.000001]];
   var points  = _.map(geom, function(pnt){ return new Point(pnt[0],pnt[1]); });
   var polygon = new Polygon(points);
   
   assert.ok(!polygon.simple_polygon(), "polygon is complex")
 };
+
 
 
