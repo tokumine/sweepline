@@ -1,7 +1,7 @@
 // ported tests from YUI to expresso
 
-var sh = require('shamos-hoey-js')
-  , Point = sh.Point
+var sl = require('sweepline')
+  , Point = sl.Point
   , assert = require('assert')
   , _ = require('underscore');
 

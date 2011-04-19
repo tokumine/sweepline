@@ -1,5 +1,5 @@
-var sh = require('shamos-hoey-js')
-  , RedBlackTree = sh.RedBlackTree
+var sl = require('sweepline')
+  , RedBlackTree = sl.RedBlackTree
   , assert = require('assert')
   , _ = require('underscore');
 

@@ -1,8 +1,8 @@
-var sh = require('shamos-hoey-js')
-  , Polygon = sh.Polygon
-  , Point = sh.Point
-  , SweepLine = sh.SweepLine
-  , EventQueue = sh.EventQueue
+var sl = require('sweepline')
+  , Polygon = sl.Polygon
+  , Point = sl.Point
+  , SweepLine = sl.SweepLine
+  , EventQueue = sl.EventQueue
   , assert = require('assert')
   , _ = require('underscore');
 
