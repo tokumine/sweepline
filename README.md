@@ -16,7 +16,7 @@ To run the tests, ensure you have node.js and the expresso npm installed:
 
 $ Make test
 
-Note that this implementation currently doesn't validating polygons that share the same start and end vertex. Look at the tests for workarounds to this issue.
+Note that this implementation currently doesn't validate polygons that share the same start and end vertex. Look at the tests for workarounds to this issue.
 
 
 Licence
